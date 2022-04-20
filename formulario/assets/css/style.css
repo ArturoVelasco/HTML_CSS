@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(152, 147, 223);
+
+}
+
+.titulo{
+    text-align: Center;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    padding: 10px;
+    border-bottom: solid 2px white;
+    
+}
+
+.t-stroke {
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
+}
+
+.t-shadow {
+  text-shadow: 10px 7px rgb(152, 147, 223);;
+}
+
+fieldset{
+    background-color: rgb(76, 152, 202);
+    border-radius: 10px;
+
+}
+
+.Direccion{
+    background-color: rgb(152, 147, 223);
+    border-radius: 5px;
+
+}
+
+.nombre{
+    background-color: rgb(152, 147, 223);
+    border-radius: 5px;
+}
+
+.tarjeta{
+    background-color: rgb(152, 147, 223);
+    border-radius: 5px;
+}
+
+.inputs{
+    border-radius: 15px;
+}
