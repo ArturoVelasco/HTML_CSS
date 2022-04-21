@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="/HTML_CSS/htmlAvanzado/assets/css/style.css">
 </head>
 <body>
+
+    <a href="#formulario"><button>Mi primer formulario</button></a>
+    <a href="#tabla"><button>Mi 1er Tabla</button></a>
+    <a href="#tabla2"><button>Mi 2da Tabla</button></a>
+    <a href="#tabla3"><button>Mi 3ra Tabla</button></a>
+    <a href="#tabla4"><button>Mi 4ta Tabla</button></a>
+    <a href="#tabla5"><button>Mi 5ta Tabla</button></a>
     
     <!--
         Formulario
@@ -21,7 +28,7 @@
 
     -->
 
-    <h2>Este es mi formilario</h2>
+    <h2 id="formulario">Este es mi formilario</h2>
 <div>
 <fieldset>
     <legend id="legend">Formulario de contacto</legend>
@@ -57,11 +64,11 @@
         <br>
         <input type="number" placeholder="+52 2-2-2-2-2">
         <br>
+        <br> -->
+        <input type="file">
         <br>
-        <input type="file"> <!--Este sirve para enviar información-->
         <br>
-        <br>
-        <input type="radio"><!--Es un botton de circulito de check-->
+        <input type="radio">
         <br>
         <br>
         <input type="range" name="range">
@@ -114,5 +121,153 @@
 
 </fieldset>
 </div>
+<h1>Aqui empieza el tema de las tablas</h1>
+<br>
+
+<!--
+    Tablas 
+
+    Las tablas son una forma de orgaizar los datos en una página web.. Para crear una tabla, se usa la etiqueta <table>. Para crear una fila, se usa la etiqueta <tr>. Para crear una celda, se usa la etiqueta <td>.
+            -<table>Es la etiqueta que se usa para crear una tabla
+            -<td> Es la etiqueta que se usa para crear una celda . Es el contenedor mas pequeño de una tabla. 
+            -<tr> Es la etiqueta que se uso para crear una fila (table row).
+            -<th> Es la etiqueta que se usa para crear una celda de titulo (table header)
+-->
+
+<!--
+    cellspacing: Esta propiedad especifica el espacio entre celdas.
+    cellpadding: Esta propiedad específica el espacio entre bordes de celdas.
+    colspan:Esta propiedad especifica el número de columnas que ocupa una celda 
+-->
+<h3 id="tabla1">Mi primer tabla</h3> 
+<table id="tabla" align="center">
+    
+    <th>Gastos del 2020</th>
+    <th>Gastos del 2021</th>
+    <th>Gastos del 2022</th>
+    <tr>
+        <td>$400</td>
+        <td>$500</td>
+        <td>$600</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>2000</td>
+    </tr>
+    <br>
+</table>
+
+<h3 id="tabla2">Mi segunda tabla</h3> 
+<table align="center" cellspacing="2" cellpadding="2" border="5" bgcolor="dddddd">
+    <tr>
+        <td colspan="4" align="center" bgcolor="666666">
+            <font color="#FFFFFF"><strong>Animales en peligro de extinción</strong></font>
+        </td>
+    </tr>
+    <tr bgcolor="aaaaaa">
+        <td>Nombre</td>
+        <td align="center">Cabezas</td>
+        <td align="center">Previsión 2010</td>
+        <td align="center">Previsión 2020</td>
+    </tr>
+    <tr>
+        <td>Ballena</td>
+        <td align="center">6000</td>
+        <td align="center">4000</td>
+        <td align="center">1500</td>
+    </tr>
+    <tr>
+        <td>Oso Pardo</td>
+        <td align="center">50</td>
+        <td rowspan="2" colspan="2" align="center" bgcolor="red">0</td>
+    </tr>
+    <tr>
+        <td>Lince</td>
+        <td align="center">10</td>
+    </tr>
+    <tr>
+        <td>Tigre</td>
+        <td align="center">300</td>
+        <td colspan="2" align="center">210</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<h1 id="tabla3">Maquetado de página web con una tabla 3</h1>
+<table border="2" align="center" width="100%">
+    <tr>
+        <td colspan="2" align="center">NarBar</td>
+    </tr>
+    <tr>
+        <td rowspan="2" align="center">Texto</td>
+        <td>Imagen1</td>
+    </tr>
+    <tr>
+        <td>Imagen2</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">Footer</td>
+    </tr>    
+</table>
+
+<h2 id="tabla4">Tabla de ejercicio 4</h2> 
+<table border="2" width="100%">
+    <tr>
+        <td colspan="5" align="center">NarBar</td>
+    </tr>
+    <tr>
+        <td rowspan="3" colspan="2">Texto1</td>
+        <td rowspan="3" colspan="1">texto2</td>
+        <td colspan="2">texto3</td>
+    </tr>
+    <tr>
+        <td colspan="2">texto4</td>
+    </tr>
+    <tr>
+        <td colspan="2">Texto5</td>
+    </tr>
+    <tr>
+        <td>img1</td>
+        <td>img2</td>
+        <td>img3</td>
+        <td>img4</td>
+        <td>img5</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">Footer1</td>
+        <td colspan="3" align="center">Footer2</td>
+    </tr>  
+</table>
+
+<h2 id="tabla5">Tabla de ejercicio 5</h2>
+<table border="2" width="80%" align="center">
+    <tr>
+        <td colspan="1">logo</td>
+        <td colspan="6">Header</td>
+        <td colspan="1">logo</td>
+    </tr>
+    <tr>
+        <td colspan="8">Barra de Navegación</td>
+    </tr>
+    <tr>
+        <td colspan="2">Texto1</td>
+        <td colspan="4">imagen</td>
+        <td colspan="2">texto2</td>
+    </tr>
+    <tr>
+        <td colspan="3">texto3</td>
+        <td colspan="5">texto4</td>
+
+    </tr>
+    <tr>
+        <td>img1</td>
+        <td>img2</td>
+        <td>img3</td>
+        <td colspan="3">footer</td>
+        <td colspan="2">logo</td>
+    </tr>
+    
+</table>
 </body>
 </html>
